@@ -1,0 +1,52 @@
+<section *ngIf="!edited">
+    <button type="button" class="btn btn-primary" (click)="showAddEditMember()">Add</button>
+   
+  </section>
+<div class="card card-primary">
+  <div *ngIf="edited" >
+    <app-add-member (displayMessage)="showMessage($event)"
+     (backClick)="backClick($event)" [editId]="editId"></app-add-member>
+  </div>
+ <div *ngIf="!edited">
+    <div class="card-header">
+  
+      <h5>View Member</h5>
+    </div>
+  
+    <div class="card-body">
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th> Id </th>
+            <th> FirstName </th>
+            <th> LastName </th>
+            <th> Email </th>
+            <th> Edit </th>
+            <th> Delete </th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let member of memberInfo; let i = index">
+          <tr>
+            <td>{{member.id}}</td>
+            <td>{{member.firstName}}</td>
+            <td>{{member.lastName}}</td>
+            <td>{{member.email}}</td>
+            <td>
+                <a class="btn btn-info" (click)="onEditClick(member.id)" >
+                    Edit
+                </a>
+              <!-- <button class="btn btn-info" [routerLink]="['Edit',member.id]" data-toggle="modal"
+                data-target="#editModal">Edit</button> -->
+            </td>
+  
+            <td>
+              <button class="btn btn-warning" ng-really-message="Are you sure?" (click)="onDeleteClick($event, member.id)" data-toggle="modal"
+                data-target="#editModal">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+     
+    </div> 
+  </div>
+  </div>
