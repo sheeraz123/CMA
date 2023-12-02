@@ -12,39 +12,17 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#setup-instructions">Setup instructions</a>     </li>
+     <li><a href="#how-to-run-the-application">How to run the application</a></li>
+      <li><a href="#application-architecture">Application Architecture</a></li>
+  
    </ol>
 </details>
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[Contacts Management Application]
-
-This project is use for store the member information in JSON file. 
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
+<!-- Setup instructions -->
+## Setup Instructions
 ### Built With
 
 Below are the major frameworks/libraries used in project.
@@ -55,65 +33,48 @@ Below are the major frameworks/libraries used in project.
 * typescript
 * Node.JS
 * Angular CLI
-  
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-How to setup project?
-To get a local copy up and running follow these simple example steps.
-### Api Project setup
+### Api Project Installation
 * Install Visual Studio
 * Clone the repository
 * run the application
 * swagger page will open
 * Play with API's
 
-### Froentend Project Setup
+### Froentend Project Installation
 * Install VSCode
 * Clone the Repository
 * run the application
    
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the repo
+<!-- How to run the application -->
+## How to run the application
+### Backend Application
+1. Clone the repository
    ```sh
-   git clone https://github.com/sheeraz123/ContactApp.git
+   git clone https://github.com/sheeraz123/CMA.git
    ```
+2. Run the Application **ContactApp** in visual studio 2022(.NET7)
+3. Swagger page will open. you can play with API
+
+### Frontend Application
+1. Same repository you will find the **ContactWebApp**
+2. open in VSCode
+3. Install all the prerequisites for angular application
+4. Run the application by using ng serve --open
+     
    
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- CONTACT -->
-## Contact
+## Application Architecture
 
-Your Name - ABC
+* Clean Architecture
+* CQRS pattern
+* Repository
+  
 
-Project Link: [https://github.com/sheeraz123/ContactApp.git](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
