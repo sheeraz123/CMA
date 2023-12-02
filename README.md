@@ -64,7 +64,6 @@ Below are the major frameworks/libraries used in project.
      
    
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -76,7 +75,6 @@ Below are the major frameworks/libraries used in project.
 * Repository
   
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
